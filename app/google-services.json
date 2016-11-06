@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "658813667745",
+    "firebase_url": "https://tipondemand.firebaseio.com",
+    "project_id": "tipondemand",
+    "storage_bucket": "tipondemand.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658813667745:android:cf0db2f43b0ea5b3",
+        "android_client_info": {
+          "package_name": "com.example.venkateshwar.tod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658813667745-ral5subnlpsb5fgma9k5gvcfpq35nh4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy4sKBZokCftUfJqbzrUaZqrfOZ0gIB-s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
