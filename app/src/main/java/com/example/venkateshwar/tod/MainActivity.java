@@ -1,13 +1,14 @@
 package com.example.venkateshwar.tod;
 
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +17,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -31,6 +31,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -48,17 +49,15 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     public static ArrayList<Learning> arrayList = new ArrayList<>();
 
-
     private FirebaseAuth mAuth;
-    public static HashSet<Learning> hashSet = new HashSet<Learning>();
     ImageButton gimme, add, all;
     TextView textView;
     EditText editText;
     DatabaseReference mDatabase;
-    DatabaseReference mLearnings;
+    static DatabaseReference mLearnings;
     private static final int RC_SIGN_IN = 1;
     private GoogleApiClient mGoogleApiClient;
     private static FirebaseUser user;
@@ -66,15 +65,67 @@ public class MainActivity extends AppCompatActivity {
     String username;
     static boolean already = false;
 
+    ValueEventListener vel=new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            GenericTypeIndicator<List<Learning>> typeIndicator = new GenericTypeIndicator<List<Learning>>() {
+            };
+            List<Learning> cloudCopy = dataSnapshot.getValue(typeIndicator);
+            HashSet<Learning> hashSet = new HashSet<Learning>();
+            if (cloudCopy != null)
+                hashSet.addAll(cloudCopy);
+            hashSet.addAll(arrayList);
+            arrayList.clear();
+            hashSet.remove(null);
+            arrayList.addAll(hashSet);
+            Collections.sort(arrayList, new Comparator<Learning>() {
+                @Override
+                public int compare(Learning lhs, Learning rhs) {
+                    DateFormat dateFormat = new SimpleDateFormat("yyyy-MMM-dd hh:mm:ss");
+                    Date l = null, r = null;
+                    try {
+                        l = dateFormat.parse(lhs.getCreated());
+                        r = dateFormat.parse(rhs.getCreated());
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    return l.compareTo(r);
+                }
+            });
+            if (cloudCopy != null && arrayList.size() != cloudCopy.size()) {
+                mLearnings.setValue(arrayList);
+            }
+            Snackbar.make(findViewById(android.R.id.content), "Synced with cloud", Snackbar.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
+
+    SwipeRefreshLayout srl;
+    void refresh() {
+        if (mLearnings!=null) {
+            mLearnings.addValueEventListener(vel);
+            mLearnings.removeEventListener(vel);
+            Snackbar.make(findViewById(android.R.id.content), "Successfully Synced with Cloud.", Snackbar.LENGTH_LONG).show();
+        }
+        else{
+            Snackbar.make(findViewById(android.R.id.content), "You're not logged in.", Snackbar.LENGTH_LONG).show();
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //instantiate local firebase and make it persistent offline B]
-        if (!already) {
+
+        if (!already) { //instantiate local firebase and make it persistent offline B]
             FirebaseDatabase.getInstance().setPersistenceEnabled(true);
             already = true;
         }
+//        getActionBar().setHomeButtonEnabled(true);
         mAuth = FirebaseAuth.getInstance();
         uname = (TextView) findViewById(R.id.uname);
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -85,60 +136,73 @@ public class MainActivity extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.editText);
         user = mAuth.getCurrentUser();
         uname.setTextColor(Color.BLACK);
-        final ValueEventListener vel = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                GenericTypeIndicator<List<Learning>> typeIndicator = new GenericTypeIndicator<List<Learning>>() {
-                };
-                List<Learning> cloudCopy = dataSnapshot.getValue(typeIndicator);
-                HashSet<Learning> hashSet = new HashSet<Learning>();
-                if(cloudCopy!=null)
-                hashSet.addAll(cloudCopy);
-                hashSet.addAll(arrayList);
-                arrayList.clear();
-                hashSet.remove(null);
-                arrayList.addAll(hashSet);
-                Collections.sort(arrayList, new Comparator<Learning>() {
-                    @Override
-                    public int compare(Learning lhs, Learning rhs) {
-                        DateFormat dateFormat = new SimpleDateFormat("yyyy-MMM-dd hh:mm:ss");
-                        Date l = null, r = null;
-                        try {
-                            l = dateFormat.parse(lhs.getCreated());
-                            r = dateFormat.parse(rhs.getCreated());
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
-                        return l.compareTo(r);
-                    }
-                });
-                if (arrayList.size()!=cloudCopy.size()) {
-                    mLearnings.setValue(arrayList);
+
+        srl= (SwipeRefreshLayout) findViewById(R.id.srl);
+
+        if (srl==null){
+            Snackbar.make(findViewById(android.R.id.content), "Srl Error.", Snackbar.LENGTH_LONG).show();
+
+        }
+        else {
+//            srl.setNestedScrollingEnabled(true);
+            srl.requestDisallowInterceptTouchEvent(true);
+            srl.setEnabled(true);
+            srl.setColorSchemeColors(getResources().getColor(R.color.white),
+                    R.color.white,R.color.common_google_signin_btn_text_light);
+            srl.setProgressBackgroundColorSchemeColor(Color.argb(255,8,0x94,0xff));
+
+            srl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                @Override
+                public void onRefresh() {
+                    refresh();
+                    srl.setRefreshing(false);
                 }
-                Toast.makeText(getApplicationContext(), "Synced with cloud", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        };
-
+            });
+        }
         FirebaseAuth.AuthStateListener mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//                     User is signed in
                 FirebaseUser tempuser = firebaseAuth.getCurrentUser();
+                //User is signed in
                 if (tempuser != null) {
                     user = tempuser;
                     username = user.getDisplayName();
                     mLearnings = mDatabase.child("users").child(user.getUid());
                     mLearnings.keepSynced(true);
-                    mLearnings.addListenerForSingleValueEvent(vel);
+                    AsyncTask.execute(runnable);
+                    mLearnings.removeEventListener(vel);
+                    mLearnings.addChildEventListener(new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                            Snackbar.make(findViewById(android.R.id.content), "Successfully Added", Snackbar.LENGTH_SHORT).show();
+                        }
 
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                            Snackbar.make(findViewById(android.R.id.content), "Successfully Edited", Snackbar.LENGTH_SHORT).show();
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+                            Snackbar.make(findViewById(android.R.id.content), "Successfully Deleted", Snackbar.LENGTH_SHORT).show();
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                            Snackbar.make(findViewById(android.R.id.content), "Successfully Moved", Snackbar.LENGTH_SHORT).show();
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            Snackbar.make(findViewById(android.R.id.content), "Successfully Cancelled", Snackbar.LENGTH_SHORT).show();
+                        }
+                    });
                     uname.setText(user.getDisplayName());
                 } else {
-//                     User is signed out
+                    //User is signed out
                     uname.setText("");
                 }
             }
@@ -161,58 +225,12 @@ public class MainActivity extends AppCompatActivity {
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-//        syncCloud(mLearnings,arrayList);
-        if (textView != null) {
-            textView.setMovementMethod(new ScrollingMovementMethod());
-            textView.setLongClickable(true);
-            textView.setTextIsSelectable(true);
-            textView.setFocusable(true);
-            textView.setFocusableInTouchMode(true);
-        }
-
-        if (gimme != null) {
-            gimme.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    Toast.makeText(getApplicationContext(), "Gimme one", Toast.LENGTH_SHORT).show();
-                    return true;
-                }
-            });
-        }
-        if (all != null) {
-            all.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    Toast.makeText(getApplicationContext(), "Show All", Toast.LENGTH_SHORT).show();
-                    return true;
-                }
-            });
-        }
-        if (add != null) {
-            add.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    Toast.makeText(getApplicationContext(), "Add", Toast.LENGTH_SHORT).show();
-                    return true;
-                }
-            });
-        }
-
         if (all != null && textView != null) {
             all.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-                    StringBuffer s1 = new StringBuffer();
-                    int i = 0;
-
-                    for (Learning str : arrayList) {
-                        s1.append(i + 1 + ". " + str.toString() + "\n");
-                        i++;
-                    }
-                    textView.setText(s1);
-
+                    Intent intent=new Intent(getApplicationContext(), ListActivity.class);
+                    startActivity(intent);
                 }
             });
         }
@@ -221,8 +239,7 @@ public class MainActivity extends AppCompatActivity {
             gimme.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                    unFocus();
                     if (arrayList.size() > 0) {
                         int x = (int) (Math.random() * arrayList.size());
                         assert textView != null;
@@ -231,43 +248,46 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
         if (add != null) {
             add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                    unFocus();
                     String s = editText.getText().toString().trim();
                     try {
                         if (s.isEmpty()) {
-                            Toast.makeText(getApplicationContext(), "Oy! Write something.", Toast.LENGTH_LONG).show();
+                            Snackbar.make(findViewById(android.R.id.content), "Oy! Write something.", Snackbar.LENGTH_LONG).show();
+
                             throw new Exception();
                         }
                         for (Learning learning : arrayList) {
                             if (learning.getData().equals(s)) {
-                                Toast.makeText(getApplicationContext(), "This one already exists.", Toast.LENGTH_LONG).show();
+                                Snackbar.make(findViewById(android.R.id.content), "This one already exists.", Snackbar.LENGTH_LONG).show();
                                 throw new Exception();
                             }
                         }
-                        hashSet.add(new Learning(s));
                         arrayList.add(new Learning(s));
+//                        editText.setText("");
+//                        Collections.sort(arrayList, new Comparator<Learning>() {
+//                            @Override
+//                            public int compare(Learning lhs, Learning rhs) {
+//                                DateFormat dateFormat = new SimpleDateFormat("yyyy-MMM-dd hh:mm:ss");
+//                                Date l = null, r = null;
+//                                try {
+//                                    l = dateFormat.parse(lhs.getCreated());
+//                                    r = dateFormat.parse(rhs.getCreated());
+//                                } catch (ParseException e) {
+//                                    e.printStackTrace();
+//                                }
+//                                return l.compareTo(r);
+//                            }
+//                        });
+                        if (mLearnings != null) {
+                            mLearnings.child(String.valueOf(arrayList.size())).setValue(new Learning(s));
+//                            mLearnings.setValue(arrayList);
+                        }
                         editText.setText("");
-                        Collections.sort(arrayList, new Comparator<Learning>() {
-                            @Override
-                            public int compare(Learning lhs, Learning rhs) {
-                                DateFormat dateFormat = new SimpleDateFormat("yyyy-MMM-dd hh:mm:ss");
-                                Date l = null, r = null;
-                                try {
-                                    l = dateFormat.parse(lhs.getCreated());
-                                    r = dateFormat.parse(rhs.getCreated());
-                                } catch (ParseException e) {
-                                    e.printStackTrace();
-                                }
-                                return l.compareTo(r);
-                            }
-                        });
-                        if (mLearnings != null)
-                            mLearnings.setValue(arrayList);
                     } catch (Exception e) {
                         Log.e("Exception", "File write failed: " + e.toString());
                     }
@@ -277,10 +297,19 @@ public class MainActivity extends AppCompatActivity {
             });
 
         }
-
-
     }
 
+    final Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            mLearnings.addListenerForSingleValueEvent(vel);
+        }
+    };
+
+    void unFocus(){
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+    }
 
     private void signIn() {
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
@@ -299,10 +328,10 @@ public class MainActivity extends AppCompatActivity {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
-                Toast.makeText(getApplicationContext(), "Successfully Signed In", Toast.LENGTH_LONG).show();
+                Snackbar.make(findViewById(android.R.id.content), "Successfully Signed In", Snackbar.LENGTH_LONG).show();
             } else {
                 // Google Sign In failed, update UI appropriately
-                Toast.makeText(getApplicationContext(), "Couldn't sign in ", Toast.LENGTH_LONG).show();
+                Snackbar.make(findViewById(android.R.id.content), "Couldn't sign in ", Snackbar.LENGTH_LONG).show();
             }
         }
     }
@@ -321,8 +350,8 @@ public class MainActivity extends AppCompatActivity {
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
 //                            Log.w(TAG, "signInWithCredential", task.getException());
-                            Toast.makeText(getApplicationContext(), "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
+                            Snackbar.make(findViewById(android.R.id.content), "Authentication failed.",
+                                    Snackbar.LENGTH_SHORT).show();
                         }
                         // ...
                     }
@@ -348,6 +377,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
             case R.id.signin: {
                 signIn();
@@ -355,8 +385,6 @@ public class MainActivity extends AppCompatActivity {
             }
             default:
                 return super.onOptionsItemSelected(item);
-
         }
-
     }
 }
