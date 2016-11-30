@@ -17,6 +17,7 @@ public class Learning {
         this.data=data;
         this.created=android.text.format.DateFormat.format("yyyy-MMM-dd hh:mm:ss", new java.util.Date()).toString();
     }
+
     public Learning(Learning l){
         this.data=l.data;
         this.created=l.getCreated();
@@ -39,6 +40,14 @@ public class Learning {
     @Override
     public String toString() {
         return this.getData();
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public void setCreated(String created) {
+        this.created = created;
     }
 
     public String getData(){

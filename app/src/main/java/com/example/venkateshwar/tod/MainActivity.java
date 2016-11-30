@@ -125,7 +125,6 @@ public class MainActivity extends AppCompatActivity{
             FirebaseDatabase.getInstance().setPersistenceEnabled(true);
             already = true;
         }
-//        getActionBar().setHomeButtonEnabled(true);
         mAuth = FirebaseAuth.getInstance();
         uname = (TextView) findViewById(R.id.uname);
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -141,10 +140,8 @@ public class MainActivity extends AppCompatActivity{
 
         if (srl==null){
             Snackbar.make(findViewById(android.R.id.content), "Srl Error.", Snackbar.LENGTH_LONG).show();
-
         }
         else {
-//            srl.setNestedScrollingEnabled(true);
             srl.requestDisallowInterceptTouchEvent(true);
             srl.setEnabled(true);
             srl.setColorSchemeColors(getResources().getColor(R.color.white),
@@ -285,7 +282,6 @@ public class MainActivity extends AppCompatActivity{
 //                        });
                         if (mLearnings != null) {
                             mLearnings.child(String.valueOf(arrayList.size())).setValue(new Learning(s));
-//                            mLearnings.setValue(arrayList);
                         }
                         editText.setText("");
                     } catch (Exception e) {
