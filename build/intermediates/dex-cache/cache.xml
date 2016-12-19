@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a76a6983a23788b3689524d4bed763955afbd306">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.1_0eaa0ed717f65057ef2c86847bebfe620005669d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.1_3de05fc117ffde6e4f8045ea08ed7bf771ecddc5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_abcfc16b70480a9873ab01926a26b4959b87690d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_5bcb1b3b398f828dc63383a7af66289a25a5c59a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.1_37ded7fee193cbb0261b7e39e09cf26f74874ffe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.1_a376f64e0a0c68df38c419a5b238ec58726ebe49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_f51c90c61ca12ec2c152ca5649f1c04b21f4f812/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c4394d46152165cd3256fb711ac94f66a28fbae1">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.6.1_e61aeee5c60f02018177efa1b7e404af05728d14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.1_b5ad7f0cf53e8d1ffb33ce7188f3800686e3f475/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a136366045678579300d161de97c2211c4c4f7a0">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.1_2129d55d7c34161833ccfc6151b9eacf21bcf284/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f0e96478ca3147bc588aadb9ae467d85b42473cc">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.6.1_0b5413738836c0468c9e827dbddad2e024a6737c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.1_93b4106f78e0e0f60390bb94a1f3ef080962e48c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_2c604af82781eb0c65438d51204e3245f0be9601/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_15ce4968dac79fd55b3465fb96bda89f22a36394/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.1_82ccbba064bc527a6843b78d5eb313f955ee127e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="9c0cf3d4f9d7d076f301e110b92e18ae23da12c2">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.6.1_93ade5cb276777ec48a0682aacf6f0cdac17e3ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.1_a3b8f712c720fc215f84a579b61d46ea93c9432c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_6fa7c92e8aebb0e12ffce903fc48f2a2db2f2d0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.1_b1098ca098af1c186916be6275968e8c43983052/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_5a6c3b2af50a9e44d6d1bb2791db6a7bc7fa67d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ff9be0a1e75a21c372735930d8987a55b5e6065f">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.1_93ec16a50e35dab48d9fe60f690af4feb3d0f2b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="90be14317e3f26d18438e8dbf8544500d1dfe07f">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.1_ab50658f0d83ef6d353c3e2fcb25ac6b1b165642/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ee0ccb43f6ab276191b7f2d77c305fa9beb26db9">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.6.1_03ab55189e2f607fa975eebd3efd923ccd21f940/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.1_bc10070030d52d28c3cada38362ceefa8e96321a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_831069ddc213f00524077acc317e2dd49101f2ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.1_6004d6eae0857bcf4e19744ae1e096b457f0c982/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_f0595c1a4404555bd9876aca3d535d0892b619f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.1_4f72359023dc5686015fd6d32c4de1cf3e5e0079/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_ad9c363169266ac0728ebaa126a2161ce35e8458/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="518adc52081d41724932b41bc132e4d50a352b86">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.6.1_219ead75272ec1775d5991a69a15a62afc6b5f1a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ee61ace5f3e488fc610e1c67693c49186a441f32">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.1_baa2fab84aa9508130e1167340935e7185626f13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.0_f85ce102d66939822d85b892877ba510834072f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_b957ce432efcde4405d6200d7e035534a21fa652/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.1_880f3b48ea06ee2a6356188cdac8fb7e7892e8e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_321de9686240dc2669ff3aeedea0ebd858ac084d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.1_03ed97f3b74a3a711481507f78f182a510f6a066/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="79f521967ad7f49b34748db89df02852c2b2f87b">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.6.1_74caf7f30c33b66b432fdb429a2f6a3f6d3d4b5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_59174d53c53c1f903b9d89cb26ce96828c3c1d6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_6b4ec869f5c2abe1d28849110ec0fde8941025bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_135488270401c9863f01b162a0f64c551c1daaec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="dfcba20b85ef3669a8ced0a8760a6df281cbd7c7">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.6.1_ba8569b6c1238fa6a91214bffe8dca31b2dce912/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ad7706f8bb4a985656a8d2142f74021c8b0e03d8">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.6.1_de68036acd4d980b14505a3ec8ff2df9dcdefc4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a53ac0560ab915a02c50d2e5c7b003381e6fb5e3">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.6.1_5a90ceb2c9cd360a8ef211ae1bb0525a23da09ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="babb25794a7599069d34705038744c5760a9a88c">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.1_934b7bd23179c3bab84738548eb3d5dcfe55ea2d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3ca33025440b3ce777b34574c1dcd8d0c066c7e6">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5392db3448083dbec92442b022c7fea27d29a8e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.1_2268bc6145a0d31f3ecc06156b8c0eddf3b18dab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.1_59594a9dd6801e0ac7811889576f4e787183b17a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0cae6511c5705869cacf199f8abb0ea84cd10157">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.1_2171e165d80a65037613f2a23adb83decf6ece1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.1_09ace8fa44645d53640f476d99e0a840ee7b00ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d45c048bb1c55cf963899190e507065aea8e5be9">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.6.1_b64aa9c7fa09351dd9a6775b83990f9ae3dc410a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0dfc12e4aacf514346ea866560c99807d032bc48">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.6.1_364db09ecc0e9f55965cd2701d6c50ac2c5d87d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="526f4b02f1771fa7607ff1b89fe2e9bd0344fee8">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.6.1_e1d10bce6734578df58d2abc59403683efa0c5f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.6.1_3be302bd7ff3b3c71eda23d9dfb4c7a2aba3f78a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="11dfeb6f404be53b36ad9d36dc55c3baff2a7c19">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c3f065df4aee8036a0899a686e881120c91b98bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.1_729719c52f020e253c2a14af82f2b50184f1d877/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.1_3eb4714408614205a0c7da1e3bad5a182144b128/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.6.1_0d263222d4b02b47e1f275e61639dfb5b17819a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.1_5c4dfcf3df9d8cd8aff4f71c22135301fd2d87df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.0_5e3c754f458d6af9d0b3096f6e106b5e50b5e1a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_df6c16e985d2dc1c21429993f1e14dab51417432/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.1_231fb287cf8b61fa1de4b8e4d482dc38fa8f384e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1810ae0df0a1b9b539ce97df54e96f2bf8f5ff94">
+        <dex dex="/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.6.1_0aeb3f1d250a8eb9876f84584daf8103debeb18b/classes.dex" />
+    </item>
+
+</items>

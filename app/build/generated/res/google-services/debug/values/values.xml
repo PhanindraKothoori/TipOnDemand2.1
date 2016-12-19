@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">658813667745-ral5subnlpsb5fgma9k5gvcfpq35nh4o.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://tipondemand.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">658813667745</string>
+    <string name="google_api_key" translatable="false">AIzaSyDy4sKBZokCftUfJqbzrUaZqrfOZ0gIB-s</string>
+    <string name="google_app_id" translatable="false">1:658813667745:android:cf0db2f43b0ea5b3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDy4sKBZokCftUfJqbzrUaZqrfOZ0gIB-s</string>
+    <string name="google_storage_bucket" translatable="false">tipondemand.appspot.com</string>
+</resources>

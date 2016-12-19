@@ -1,0 +1,7 @@
+#Sat Dec 03 21:28:46 IST 2016
+base.0=/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c3f065df4aee8036a0899a686e881120c91b98bc
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5392db3448083dbec92442b022c7fea27d29a8e3/classes.dex
+base.1=/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5392db3448083dbec92442b022c7fea27d29a8e3
+file.0=/Users/Aravind/Documents/Projects/TipOnDemand2.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c3f065df4aee8036a0899a686e881120c91b98bc/classes.dex
